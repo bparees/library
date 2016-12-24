@@ -148,6 +148,21 @@ data:
         docs: https://github.com/sclorg/postgresql-container/blob/master/README.md
         regex: postgresql
         suffix: rhel7
+  redis:
+    templates:
+      - location: https://raw.githubusercontent.com/openshift/origin/master/examples/db-templates/redis-ephemeral-template.json
+        docs: https://github.com/openshift/origin/blob/master/examples/db-templates/README.md
+      - location: https://raw.githubusercontent.com/openshift/origin/master/examples/db-templates/redis-persistent-template.json
+        docs: https://github.com/openshift/origin/blob/master/examples/db-templates/README.md
+    imagestreams:
+      - location: https://raw.githubusercontent.com/openshift/origin/master/examples/image-streams/image-streams-centos7.json
+        docs: https://github.com/sclorg/redis-container/blob/master/README.md
+        regex: redis
+        suffix: centos7
+      - location: https://raw.githubusercontent.com/openshift/origin/master/examples/image-streams/image-streams-rhel7.json
+        docs: https://github.com/sclorg/redis-container/blob/master/README.md
+        regex: redis
+        suffix: rhel7
   amq:
     templates:
       - location: https://raw.githubusercontent.com/jboss-openshift/application-templates/{xpaas_version}/amq/amq62-basic.json

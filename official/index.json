@@ -734,6 +734,38 @@
             }
         ]
     },
+    "redis": {
+        "imagestreams": [
+            {
+                "docs": "https://github.com/sclorg/redis-container/blob/master/README.md",
+                "name": "redis",
+                "path": "official/redis/imagestreams/redis-centos7.json",
+                "source_url": "https://raw.githubusercontent.com/openshift/origin/master/examples/image-streams/image-streams-centos7.json"
+            },
+            {
+                "docs": "https://github.com/sclorg/redis-container/blob/master/README.md",
+                "name": "redis",
+                "path": "official/redis/imagestreams/redis-rhel7.json",
+                "source_url": "https://raw.githubusercontent.com/openshift/origin/master/examples/image-streams/image-streams-rhel7.json"
+            }
+        ],
+        "templates": [
+            {
+                "description": "Redis in-memory data structure store, without persistent storage. For more information about using this template, including OpenShift considerations, see https://github.com/sclorg/redis-container/blob/master/3.2.\n\nWARNING: Any data stored will be lost upon pod destruction. Only use this template for testing",
+                "docs": "https://github.com/openshift/origin/blob/master/examples/db-templates/README.md",
+                "name": "redis-ephemeral",
+                "path": "official/redis/templates/redis-ephemeral.json",
+                "source_url": "https://raw.githubusercontent.com/openshift/origin/master/examples/db-templates/redis-ephemeral-template.json"
+            },
+            {
+                "description": "Redis in-memory data structure store, with persistent storage. For more information about using this template, including OpenShift considerations, see https://github.com/sclorg/redis-container/blob/master/3.2.\n\nNOTE: You must have persistent volumes available in your cluster to use this template.",
+                "docs": "https://github.com/openshift/origin/blob/master/examples/db-templates/README.md",
+                "name": "redis-persistent",
+                "path": "official/redis/templates/redis-persistent.json",
+                "source_url": "https://raw.githubusercontent.com/openshift/origin/master/examples/db-templates/redis-persistent-template.json"
+            }
+        ]
+    },
     "ruby": {
         "imagestreams": [
             {

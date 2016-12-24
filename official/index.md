@@ -426,6 +426,25 @@ Path: official/rails/templates/rails-postgresql-example.json
 Source URL: [https://raw.githubusercontent.com/openshift/rails-ex/master/openshift/templates/rails-postgresql-persistent.json](https://raw.githubusercontent.com/openshift/rails-ex/master/openshift/templates/rails-postgresql-persistent.json )  
 Docs: [https://github.com/openshift/rails-ex/blob/master/README.md](https://github.com/openshift/rails-ex/blob/master/README.md)  
 Path: official/rails/templates/rails-pgsql-persistent.json  
+# redis
+## imagestreams
+### redis
+Source URL: [https://raw.githubusercontent.com/openshift/origin/master/examples/image-streams/image-streams-centos7.json](https://raw.githubusercontent.com/openshift/origin/master/examples/image-streams/image-streams-centos7.json )  
+Docs: [https://github.com/sclorg/redis-container/blob/master/README.md](https://github.com/sclorg/redis-container/blob/master/README.md)  
+Path: official/redis/imagestreams/redis-centos7.json  
+### redis
+Source URL: [https://raw.githubusercontent.com/openshift/origin/master/examples/image-streams/image-streams-rhel7.json](https://raw.githubusercontent.com/openshift/origin/master/examples/image-streams/image-streams-rhel7.json )  
+Docs: [https://github.com/sclorg/redis-container/blob/master/README.md](https://github.com/sclorg/redis-container/blob/master/README.md)  
+Path: official/redis/imagestreams/redis-rhel7.json  
+## templates
+### redis-ephemeral
+Source URL: [https://raw.githubusercontent.com/openshift/origin/master/examples/db-templates/redis-ephemeral-template.json](https://raw.githubusercontent.com/openshift/origin/master/examples/db-templates/redis-ephemeral-template.json )  
+Docs: [https://github.com/openshift/origin/blob/master/examples/db-templates/README.md](https://github.com/openshift/origin/blob/master/examples/db-templates/README.md)  
+Path: official/redis/templates/redis-ephemeral.json  
+### redis-persistent
+Source URL: [https://raw.githubusercontent.com/openshift/origin/master/examples/db-templates/redis-persistent-template.json](https://raw.githubusercontent.com/openshift/origin/master/examples/db-templates/redis-persistent-template.json )  
+Docs: [https://github.com/openshift/origin/blob/master/examples/db-templates/README.md](https://github.com/openshift/origin/blob/master/examples/db-templates/README.md)  
+Path: official/redis/templates/redis-persistent.json  
 # ruby
 ## imagestreams
 ### ruby
